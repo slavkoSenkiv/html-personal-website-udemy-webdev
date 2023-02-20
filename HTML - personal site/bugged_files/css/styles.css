@@ -1,0 +1,21 @@
+#avatar {
+    height: 150px;
+}
+body {
+    background-color: azure;
+}
+
+hr{
+    border-style: dotted none none none;
+    border-width: 10px;
+    border-color: gray;
+    width: 15%;
+}
+
+h1, h2, h3{
+    color: blueviolet;
+}
+
+td{
+    padding: 5px;
+}
