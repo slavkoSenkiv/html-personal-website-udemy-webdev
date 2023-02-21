@@ -13,12 +13,16 @@ body, h1{
 
 .mid{
     background-color: blue;
-    margin-left: 200px;
+    position: relative;
+    left: 400px;
+    bottom: 200px;
 }
 
 .down{
     background-color: green;
-    margin-left: 400px;
+    position: relative;
+    left: 200px;
+    bottom: 400px;
 }
 
 .down, .up, .mid{
