@@ -8,21 +8,23 @@ body, h1{
 
 .up{
     background-color: red;
+    position: absolute;
 
 }
 
 .mid{
     background-color: blue;
-    position: relative;
-    left: 400px;
-    bottom: 200px;
+    position: absolute;
+    left: 200px;
+    top: 700px;
 }
 
 .down{
     background-color: green;
-    position: relative;
-    left: 200px;
-    bottom: 400px;
+    position: absolute;
+    left: 400px;
+    top: 900px
+
 }
 
 .down, .up, .mid{
