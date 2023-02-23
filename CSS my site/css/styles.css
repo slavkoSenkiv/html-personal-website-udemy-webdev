@@ -1,33 +1,54 @@
-div{
-    background-color: aquamarine;
-}
-body, h1{
+body{
     padding: 0;
     margin: 0;
+    text-align: center;
+    background-color:azure;
+    font-family: 'Merriweather';
 }
 
-.up{
-    background-color: red;
-    position: absolute;
-
+h1{
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    margin: 100 auto 0 auto;
 }
 
-.mid{
-    background-color: blue;
+h1, h2{
+    color: #66BFBF;
+}
+
+h3, a{
+    color: #11999E;
+}
+
+h2, h3{
+    font-family: 'Montserrat';
+}
+
+h2{
+    font-family: 2.5rem;
+}
+
+span{
+    text-decoration: underline;
+}
+.top-container{
+    position: relative;
+    padding: 100px;
+}
+
+.cloud{
     position: absolute;
+}
+
+.top-cloud{
+    right: 200px;
+}
+
+.bottom-cloud{
     left: 200px;
-    top: 700px;
 }
 
-.down{
-    background-color: green;
-    position: absolute;
-    left: 400px;
-    top: 900px
-
-}
-
-.down, .up, .mid{
-    height: 200px;
-    width: 200px;
+.feature{
+    height: 150px;
+    border-radius: 25%;
 }
