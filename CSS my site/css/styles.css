@@ -22,6 +22,7 @@ h3, a{
 
 h2, h3{
     font-family: 'Montserrat';
+    font-weight: normal;
 }
 
 h2{
@@ -30,6 +31,13 @@ h2{
 
 span{
     text-decoration: underline;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
 }
 .top-container{
     position: relative;
@@ -48,7 +56,18 @@ span{
     left: 200px;
 }
 
-.feature{
-    height: 150px;
+.feature-first{
+    height: 100px;
+    float: left;
+    margin-right: 30px;
+}
+
+.feature-second{
+    height: 100px;
+    float: right;
+    margin-left: 30px;
+}
+.avatar{
+    width: 15%;
     border-radius: 25%;
 }
