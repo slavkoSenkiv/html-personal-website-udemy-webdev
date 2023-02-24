@@ -2,21 +2,20 @@ body{
     padding: 0;
     margin: 0;
     text-align: center;
-    background-color:azure;
     font-family: 'Merriweather';
 }
 
 h1{
     font-family: 'Sacramento';
     font-size: 5rem;
-    margin: 100 auto 0 auto;
+    margin: 0;
 }
 
 h1, h2{
     color: #66BFBF;
 }
 
-h3, a{
+h3{
     color: #11999E;
 }
 
@@ -34,14 +33,24 @@ span{
 }
 
 .skill-row{
-    width: 50%;
-    margin: 100px auto;
     text-align: left;
     line-height: 2;
 }
 .top-container{
     position: relative;
-    padding: 100px;
+    background-color:azure;
+    padding-top: 100px;
+}
+
+.feature-container{
+    margin: 40px;
+}
+
+hr{
+    border-style: dotted none none none;
+    border-width: 10px;
+    width: 15%;
+    border-color: gray;
 }
 
 .cloud{
@@ -49,25 +58,65 @@ span{
 }
 
 .top-cloud{
-    right: 200px;
+    right: 25%;
 }
 
 .bottom-cloud{
-    left: 200px;
+    left: 25%;
 }
 
-.feature-first{
-    height: 100px;
+.monetization{
     float: left;
     margin-right: 30px;
 }
 
-.feature-second{
-    height: 100px;
+.liveops{
     float: right;
     margin-left: 30px;
 }
+
 .avatar{
-    width: 15%;
     border-radius: 25%;
+}
+
+.feature{
+    height: 150px;
+}
+
+.profile, .contact-me, .skill-row{
+    width: 50%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.btn {
+    background: #66BFBF;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.before-button{
+    margin-bottom: 50px;
+}
+  
+.btn:hover {
+background: gray;
+text-decoration: none;
+}
+
+.bottom-container{
+background-color: #66BFBF;
+padding: 50px;
+color: white;
+}
+
+a{
+    text-decoration: none;
+    padding: 0 50px;
+    color: white;
+
 }
