@@ -1,0 +1,25 @@
+#title{
+    background-color: #ff4c68;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color: white;
+}
+
+.container-fluid{
+    padding: 5% 15%;
+}
+
+.btn{
+    margin: 5px;
+}
+
+.screen{
+    transform: rotate(25deg);
+    height: 400px;
+    margin: 40px 0 0 100px;
+}
