@@ -1,13 +1,17 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 #title{
     background-color: #ff4c68;
+    color: white;
+
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     font-weight: 900;
     line-height: 1.5;
-    color: white;
 }
 
 .container-fluid{
@@ -23,3 +27,24 @@ h1{
     height: 400px;
     margin: 40px 0 0 100px;
 }
+
+/* navigation bar */
+
+.navbar{
+    padding-bottom: 3.5rem;
+}
+
+.navbar-brand{
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: white;
+}
+
