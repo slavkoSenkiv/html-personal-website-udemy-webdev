@@ -4,6 +4,8 @@ body{
 
 }
 
+
+/* title */
 #title{
     background-color: #ff4c68;
     color: white;
@@ -31,6 +33,18 @@ h1{
     height: 400px;
     margin: 40px 0 0 100px;
     position: absolute;
+}
+
+@media (max-width:580px){
+    .screen{
+        transform: rotate(0);
+        position: static;
+        margin: 5%;
+    }
+
+    .header{
+        text-align: center;
+    }
 }
 
 /* navigation bar */
