@@ -42,7 +42,7 @@ alert('Hello ' + propper_name); */
 var humanAge = (dogAge - 2) * 4 + 21;
 alert(dogAge + ' dog years is ' + humanAge + ' human years'); */
 
-function getMilk(){
+/* function getMilk(){
     alert('we are goint to get milk');
     console.log('leave the house');
     console.log('go to the store');
@@ -57,7 +57,59 @@ function getMilk(){
 
 getMilk();
 console.log('another day');
-getMilk();
+getMilk(); */
+
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+/* function main(){
+   corecore();
+   }
+   
+function core(){
+   putBeeper();
+   move();
+   turnLeft();
+   move();
+   turnRight();
+}
+
+function corecore(){
+   core();
+   core();
+   core();
+   core();
+   core();
+   } */
+
+/* function getMilk(money){
+    alert('we are goint to get milk');
+    console.log('leave the house');
+    console.log('go to the store');
+    console.log('enter the store');
+    var milk_price = 1.5;
+    var milk_bottles = Math.floor(money/milk_price);
+    console.log('pick ' + milk_bottles + ' bottles of milk');
+    console.log('buy milk');
+    console.log('leave the store');
+    console.log('come home');
+    console.log('enter home');
+    alert('we got milk');
+}
+getMilk(10); */
+
+function tell_time_left (age){
+   var lifetime = 90;
+   var years_left = lifetime-age;
+   var month_left = 12*years_left;
+   var weeks_left = 52*years_left;
+   var days_left = 365*years_left;
+   alert('you have left ' +years_left + ' years or ' + month_left +  ' months or ' + weeks_left + ' weeks left or ' + days_left + ' days');
+}
+var input_age = prompt('enter your age');
+tell_time_left(input_age);
 
 
 
