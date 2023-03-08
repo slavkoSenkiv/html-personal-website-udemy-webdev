@@ -100,7 +100,7 @@ function corecore(){
 }
 getMilk(10); */
 
-function tell_time_left (age){
+/* function tell_time_left (age){
    var lifetime = 90;
    var years_left = lifetime-age;
    var month_left = 12*years_left;
@@ -109,7 +109,35 @@ function tell_time_left (age){
    alert('you have left ' +years_left + ' years or ' + month_left +  ' months or ' + weeks_left + ' weeks left or ' + days_left + ' days');
 }
 var input_age = prompt('enter your age');
-tell_time_left(input_age);
+tell_time_left(input_age); */
+
+function getMilk(money, price){
+    alert('we are goint to get milk');
+    console.log('leave the house');
+    console.log('go to the store');
+    console.log('enter the store');
+   
+    console.log('pick ' + calculate_bottles(money, price) + ' bottles of milk');
+    console.log('buy milk');
+    console.log('leave the store');
+    console.log('come home');
+    console.log('enter home');
+    console.log('master, your change is ' + calculate_change(money,price) + ' USD')
+    alert('we got milk');
+}
+
+function calculate_bottles(money, price){
+   var milk_bottles = Math.floor(money/price);
+   return milk_bottles;
+}
+
+function calculate_change(money, price){
+   var change = money % price;
+   return change;
+}
+var given_money = prompt('give me money:');
+getMilk(given_money, 1.5);
+
 
 
 
