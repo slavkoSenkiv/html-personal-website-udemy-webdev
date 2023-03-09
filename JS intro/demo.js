@@ -145,14 +145,16 @@ getMilk(given_money, 1.5); */
 bmi_calculator(86, 1.97); */
 
 
-function rp(){
+/* function rp(){
    var lovescore = Math.floor(Math.random()*10) + 1;
    if (lovescore > 7){
       console.log(lovescore + ', its a match');
-   } else{
-      console.log('next time buddy');
    }
-   
+   if (lovescore <= 7 && lovescore > 3){
+      console.log(lovescore + ', mind you life');
+   } else{
+      console.log(lovescore + ', next time buddy');
+   }
 }
 
 function m(){
@@ -169,8 +171,30 @@ function m(){
 m();
 m();
 m();
-m();
-m();
+m(); 
+m();*/
+
+function is_leap_year(){
+   var year = prompt('enter year:');
+
+   if (year % 4 === 0) {
+      if (year % 100 === 0) {
+         if (year % 400 === 0) {
+            alert('leap year');
+      }
+      else {
+         alert('leap year');
+      }
+      } else {
+         alert('leap year');
+      } 
+   }  
+}
+
+is_leap_year();
+is_leap_year();
+is_leap_year();
+is_leap_year();
 
 
 
