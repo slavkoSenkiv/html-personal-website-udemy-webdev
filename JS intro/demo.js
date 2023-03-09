@@ -111,7 +111,7 @@ getMilk(10); */
 var input_age = prompt('enter your age');
 tell_time_left(input_age); */
 
-function getMilk(money, price){
+/* function getMilk(money, price){
     alert('we are goint to get milk');
     console.log('leave the house');
     console.log('go to the store');
@@ -136,8 +136,41 @@ function calculate_change(money, price){
    return change;
 }
 var given_money = prompt('give me money:');
-getMilk(given_money, 1.5);
+getMilk(given_money, 1.5); */
 
+/* function bmi_calculator(weight, height){
+   var bmi = Math.round(weight / Math.pow(height,2));
+   alert('you bmi is ' + bmi);
+}
+bmi_calculator(86, 1.97); */
+
+
+function rp(){
+   var lovescore = Math.floor(Math.random()*10) + 1;
+   if (lovescore > 7){
+      console.log(lovescore + ', its a match');
+   } else{
+      console.log('next time buddy');
+   }
+   
+}
+
+function m(){
+   rp();
+   rp();
+   rp();
+   rp();
+   rp();
+   rp();
+   rp();
+   rp();
+}
+
+m();
+m();
+m();
+m();
+m();
 
 
 
