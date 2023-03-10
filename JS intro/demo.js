@@ -78,10 +78,6 @@ function core(){
 
 function corecore(){
    core();
-   core();
-   core();
-   core();
-   core();
    } */
 
 /* function getMilk(money){
@@ -159,20 +155,9 @@ bmi_calculator(86, 1.97); */
 
 function m(){
    rp();
-   rp();
-   rp();
-   rp();
-   rp();
-   rp();
-   rp();
-   rp();
-}
 
-m();
-m();
-m();
-m(); 
-m();*/
+}
+*/
 
 /* function is_leap_year(){
    var year = prompt('enter year:');
@@ -192,9 +177,6 @@ m();*/
 } 
 
 is_leap_year();
-is_leap_year();
-is_leap_year();
-is_leap_year();
 */
 
 /* var guests = ['a', 'b', 'c'];
@@ -205,7 +187,7 @@ if(guests.includes(person) == true){
    alert('next time');
 } */
 
-var lst = [];
+/* var lst = [];
 function push(list){
    var lastNum = list.length + 1;
    if(lastNum % 3 == 0 && lastNum % 5 == 0){
@@ -218,24 +200,41 @@ function push(list){
       list.push('Buzz');
    }
    else{
-      list.push(lastNum);
+      list.push(lastNum +);
    }
    console.log(list);
 }
 
 function many(){
    push(lst);
-   push(lst);
-   push(lst);
-   push(lst);
-   push(lst);
-   push(lst);
-   push(lst);
-   push(lst);
+
 }
 
 many();
-many();
+many(); */
+
+var list = [];
+var lastNum = 1;
+function fizbuzz(){
+   if(lastNum % 3 == 0 && lastNum % 5 == 0){
+      list.push('Fizz Buzz');
+      lastNum++;
+   }
+   else if(lastNum % 3 == 0){
+      list.push('Fizz');
+      lastNum++;
+   }
+   else if(lastNum % 5 == 0){
+      list.push('Buzz');
+      lastNum++;
+   }
+   else{
+      list.push(lastNum);
+      lastNum++;
+   }
+   console.log(list);
+}
+fizbuzz();
 
 
 
