@@ -174,7 +174,7 @@ m();
 m(); 
 m();*/
 
-function is_leap_year(){
+/* function is_leap_year(){
    var year = prompt('enter year:');
 
    if (year % 4 === 0) {
@@ -189,12 +189,71 @@ function is_leap_year(){
          alert('leap year');
       } 
    }  
-}
+} 
 
 is_leap_year();
 is_leap_year();
 is_leap_year();
 is_leap_year();
+*/
+
+/* var guests = ['a', 'b', 'c'];
+var person = prompt('who are you?');
+if(guests.includes(person) == true){
+   alert('welcom');
+} else{
+   alert('next time');
+} */
+
+var lst = [];
+function push(list){
+   var lastNum = list.length + 1;
+   if(lastNum % 3 == 0 && lastNum % 5 == 0){
+      list.push('Fizz Buzz');
+   }
+   if(lastNum % 3 == 0){
+      list.push('Fizz');
+   }
+   if(lastNum % 5 == 0){
+      list.push('Buzz');
+   }
+   else{
+      list.push(lastNum);
+   }
+   console.log(list);
+}
+
+function many(){
+   push(lst);
+   push(lst);
+   push(lst);
+   push(lst);
+   push(lst);
+   push(lst);
+   push(lst);
+   push(lst);
+}
+
+many();
+many();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
