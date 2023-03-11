@@ -213,7 +213,7 @@ function many(){
 many();
 many(); */
 
-var list = [];
+/* var list = [];
 var lastNum = 1;
 function fizbuzz(){
    if(lastNum % 3 == 0 && lastNum % 5 == 0){
@@ -234,8 +234,62 @@ function fizbuzz(){
    }
    console.log(list);
 }
-fizbuzz();
+fizbuzz(); */
 
+/* var friends = ['a', 'b', 'c'];
+function whoPays (lst){
+   var friendID = Math.floor(Math.random() * lst.length);
+   var payer = lst[friendID];
+   alert(payer + ' payest for meal');
+}
+whoPays(friends); */
+/* 
+function song(num){
+   var originalNum = num;
+  
+   while (num >= 0){
+
+      var bottleWord = ' bottles ';
+
+      if (num == 1) {
+         bottleWord = ' bottle ';
+      }
+      else if (num == 0){
+         bottleWord = 'No more bottles ';
+      }
+
+      console.log(num + bottleWord + ' of beer on a wall. ' + num + bottleWord + ' of beer');
+      console.log('take one down and pass it around. ' + (num-1) + bottleWord + ' of beer on a wall');
+      console.log(' ');
+      num--;
+   }
+   console.log('Go to the store and buy some more ' + originalNum + bottleWord + ' of beer on a wall');
+
+}
+song(5); */
+
+/* for (i=1; i<10; i++){
+   console.log(i);
+} */
+
+function fibonachi(n){
+   var lst = [];
+   for (i=0; i<=n; i++){
+      if (i == 0 || i == 1){
+         lst.push(i);
+      }
+      else{
+         var lastId = lst.length-1;
+         var penultimateId = lst.length -2;
+         var lastNum = lst[lastId];
+         var penultimateNum = lst[penultimateId];
+         var nextNum = lastNum + penultimateNum;
+         lst.push(nextNum);
+      }
+   }
+   console.log(lst);
+}
+fibonachi(10);
 
 
 
