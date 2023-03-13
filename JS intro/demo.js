@@ -272,7 +272,7 @@ song(5); */
    console.log(i);
 } */
 
-function fibonachi(n){
+/* function fibonachi(n){
    var lst = [];
    for (i=0; i<=n; i++){
       if (i == 0 || i == 1){
@@ -289,10 +289,21 @@ function fibonachi(n){
    }
    console.log(lst);
 }
-fibonachi(10);
+fibonachi(10); */
 
+function add(a, b){
+   return a + b;
+}
+function multiply(a, b){
+   return a * b;
+}
 
+function calculator(a, b, operator){
+   return operator(a, b);
+}
 
+console.log(calculator(2, 3, add));
+console.log(calculator(2, 3, multiply));
 
 
 
