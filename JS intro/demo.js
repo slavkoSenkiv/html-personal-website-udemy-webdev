@@ -291,7 +291,7 @@ song(5); */
 }
 fibonachi(10); */
 
-function add(a, b){
+/* function add(a, b){
    return a + b;
 }
 function multiply(a, b){
@@ -303,8 +303,20 @@ function calculator(a, b, operator){
 }
 
 console.log(calculator(2, 3, add));
-console.log(calculator(2, 3, multiply));
+console.log(calculator(2, 3, multiply)); */
 
+function BellBoy (BBname, BBage, BBlanguage, BBsalary){
+   this.name = BBname;
+   this.age = BBage;
+   this.language = BBlanguage;
+   this.BBsalary = BBsalary;
+}
+
+var bb1 = new BellBoy('slav', 27, 'ua', 1200);
+var bb2 = new BellBoy('zoe', 25, 'en', 1300);
+
+
+alert(bb1.name + ' ' + bb2.name);
 
 
 

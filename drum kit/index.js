@@ -8,5 +8,9 @@ function handleClick(){
 var buttonsNum = document.querySelectorAll('.drum').length;
 for (i=0; i<buttonsNum; i++){
     var audio = new Audio('sounds/tom-1.mp3');
-    document.getElementsByTagName('button')[i].addEventListener('click', function (){audio.play();});
+    var theButton = document.getElementsByTagName('button')[i];
+    theButton.addEventListener('click', function (){
+        audio.play();
+        this.style.color = 'white';
+    }) ;
 }
