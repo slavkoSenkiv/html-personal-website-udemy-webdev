@@ -58,6 +58,7 @@ for (let i=0; i < buttonsNum; i++){
 const buttons = document.querySelectorAll('.drum');
 const buttonsNum = buttons.length;
 
+
 for (let i = 0; i < buttonsNum; i++) {
   const theButton = buttons[i];
   const buttonHtml = theButton.innerHTML;
@@ -98,3 +99,5 @@ for (let i = 0; i < buttonsNum; i++) {
     }
   });
 }
+
+
