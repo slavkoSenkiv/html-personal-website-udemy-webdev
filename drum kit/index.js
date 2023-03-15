@@ -1,6 +1,6 @@
-document.addEventListener('keydown', function(event) {
-  var pressedKey = event.key;
-  switch (pressedKey) {
+
+function makeSound(letter){
+  switch (letter) {
     case 'w':
       const tom1 = new Audio('sounds/tom-1.mp3');
       tom1.play();
@@ -30,10 +30,21 @@ document.addEventListener('keydown', function(event) {
       kick.play();
       break;
     default:
-      console.log(pressedKey);
+      console.log(letter);
       break;
   }
+}
+
+var buttonsArr = document.getElementsByClassName('.drum');
+for (i=0; i<buttonsArr.length; i++){
+  buttonsArr[i].addEventListener('click', function(){
+    var clickedKey = buttonsArr[i].innerHTML;
+    makeSound(clickedKey);
+  })
+}
+
+
+document.addEventListener('keydown', function(event) {
+  var pressedKey = event.key;
+  makeSound(pressedKey);
 });
-
-
-
