@@ -35,12 +35,12 @@ function makeSound(letter){
   }
 }
 
-var buttonsArr = document.getElementsByClassName('.drum');
+var buttonsArr = document.querySelectorAll('.drum');
 for (i=0; i<buttonsArr.length; i++){
   buttonsArr[i].addEventListener('click', function(){
-    var clickedKey = buttonsArr[i].innerHTML;
+    var clickedKey = this.innerHTML;
     makeSound(clickedKey);
-  })
+  });
 }
 
 
