@@ -310,6 +310,9 @@ function BellBoy (BBname, BBage, BBlanguage, BBsalary){
    this.age = BBage;
    this.language = BBlanguage;
    this.BBsalary = BBsalary;
+   this.clean = function(){
+      alert(this.name + ' cleaning');
+   }
 }
 
 var bb1 = new BellBoy('slav', 27, 'ua', 1200);
@@ -317,6 +320,7 @@ var bb2 = new BellBoy('zoe', 25, 'en', 1300);
 
 
 alert(bb1.name + ' ' + bb2.name);
+bb1.clean();
 
 
 

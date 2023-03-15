@@ -15,49 +15,45 @@ for (i=0; i<buttonsNum; i++){
     }) ;
 } */
 
-/* var buttonsNum = document.querySelectorAll('.drum').length;
-for (i=0; i<buttonsNum; i++){
+
+/* function playsound(audioFile){
+  var audio = new Audio('sounds/' + audioFile + '.mp3');
+  audio.play();
+}
+var buttonsNum = document.querySelectorAll('.drum').length;
+for (let i=0; i < buttonsNum; i++){
     var theButton = document.getElementsByTagName('button')[i];
-    var buttonHtml = this.innerHTML;
+    var buttonHtml = theButton.innerHTML;
     theButton.addEventListener('click', function (){
-        switch  (buttonHtml){
-            case 'w':
-                var tom1 = new Audio('sounds/tom-1.mp3');
-                tom1.play();
-                break;
-            case 'a':
-                var tom2 = new Audio('sounds/tom-2.mp3');
-                tom2.play();
-                break;
-            case 's':
-                var audio = new Audio('sounds/tom-3.mp3');
-                audio.play();
-                break;
-            case 'd':
-                var audio = new Audio('sounds/tom-4.mp3');
-                audio.play();
-                break;
-            case 'j':
-                var audio = new Audio('sounds/tom-1.mp3');
-                audio.play();
-                break;     
-            case 'k':
-                var audio = new Audio('sounds/tom-1.mp3');
-                audio.play();
-                break;
-            case 'l':
-                var audio = new Audio('sounds/tom-1.mp3');
-                audio.play();
-                break;
-            default:
-                console.log(buttonHtml);
-                break;
-
-        }
+      switch  (buttonHtml){
+        case 'w':
+          playsound('tom-1');
+          break;
+        case 'a':
+          playsound('tom-2');
+          break;
+        case 's':
+          playsound('tom-3');
+          break;
+        case 'd':
+          playsound('tom-4');
+          break;
+        case 'j':
+          playsound('snare');
+          break;    
+        case 'k':
+          playsound('crash');
+          break;
+        case 'l':
+          playsound('kick-bass');
+          break;
+        default:
+          console.log(buttonHtml);
+          break;
+      }
     }
-
-    ) ;
-} */
+  ) ;
+}  */
 
 const buttons = document.querySelectorAll('.drum');
 const buttonsNum = buttons.length;
@@ -102,4 +98,3 @@ for (let i = 0; i < buttonsNum; i++) {
     }
   });
 }
-
