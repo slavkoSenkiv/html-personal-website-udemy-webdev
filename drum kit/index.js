@@ -30,21 +30,32 @@ function makeSound(letter){
       kick.play();
       break;
     default:
-      console.log(letter);
+      console.log(letter, ' letter from make sound function');
       break;
   }
 }
 
+function buttonAnimation(letter){
+  document.querySelector('.' + letter).classList.add('pressed');
+  setTimeout(function(){document.querySelector('.' + letter).classList.remove('pressed')}, 300);
+}
+
 var buttonsArr = document.querySelectorAll('.drum');
 for (i=0; i<buttonsArr.length; i++){
+  
   buttonsArr[i].addEventListener('click', function(){
     var clickedKey = this.innerHTML;
+
     makeSound(clickedKey);
+
+    buttonAnimation(clickedKey);
   });
 }
 
-
 document.addEventListener('keydown', function(event) {
   var pressedKey = event.key;
+
   makeSound(pressedKey);
+
+  buttonAnimation(pressedKey);
 });
