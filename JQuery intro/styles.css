@@ -1,0 +1,14 @@
+/* h1{
+    color: red;;
+} */
+
+.big-title{
+    color: red;
+    font-size: 5rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.margin-around{
+    margin: 50px;
+}
+
