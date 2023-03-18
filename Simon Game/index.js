@@ -15,7 +15,7 @@ function userClickEffect(){
 };
 
 function systemIndicator(color){
-    var picker = 'div[id=' + color + ']'
+    var picker = 'div[id=' + color + ']';
     $(picker).click(function(){
         var btnColor = $(this).attr('id');
         var sound = new Audio('sounds/' + btnColor + '.mp3');
@@ -28,6 +28,7 @@ function systemIndicator(color){
         setTimeout(function(){btn.removeClass('pressed');}, 100);
     });
 }
+systemIndicator('green');
 
 userPlaySound();
 userClickEffect();
