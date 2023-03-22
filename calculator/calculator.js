@@ -15,6 +15,9 @@ app.get('/thirdpage', function(req, res){
 
 }); */
 
+
+//====================== regular calculator =====================
+
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
 });
@@ -24,6 +27,19 @@ app.post('/', function(req, res){
     var num2 = Number(req.body.num2);
     var result = num1 + num2;
     res.send(' the result is ' + result);
+});
+
+//====================== bmi calculator =====================
+
+app.get('/bmiCalculator.html', function(req, res){
+    res.sendFile(__dirname + '/bmiCalculator.html');
+})
+
+app.post('/bmiCalculator', function(req, res){
+    var weight = parseFloat(req.body.weight);
+    var height = parseFloat(req.body.height) / 100;
+    var bmi = Math.round(weight/(height*height));
+    res.send('your bmi is <strong>' + bmi + '</strong>. WOW!');
 });
 
 app.listen(3000, function(){
