@@ -8,17 +8,18 @@ app.get('/', function(req, res){
         console.log(responce.statusCode);
 
         responce.on('data', function(data){
-            console.log(data);
             var jsonData = JSON.parse(data);
-            var temp = jsonData.main.temp;
             console.log(jsonData);
-            console.log(temp);
-            console.log(jsonData.weather[0].description)
+            var temp = jsonData.main.temp;
+            var weather = jsonData.weather[0].description;
+            var icon = ' https://openweathermap.org/img/wn/' + jsonData.weather[0].icon + '@2x.png';
+            res.write('<h1>the temperature is ' + temp + '</h1>');
+            res.write('<p>and the weather is ' + weather + '<p>');
+            res.write('<img src="' + icon + '">');
+            res.send();
         });
-    })
-
-    res.send('server is up and runninng!');
-})
+    });
+});
 app.listen(3000, function(){
     console.log("server is listening to port 3000");
 })
