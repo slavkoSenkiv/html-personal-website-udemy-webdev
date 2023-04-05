@@ -32,6 +32,21 @@ app.post('/', function(req, res){
 
     const jsonData = JSON.stringify(data);
 
+    const mailchimpUrl = "https://us21.api.mailchimp.com/3.0/lists/a40a62bebd";
+
+    const options = {
+        method : 'POST',
+        auth : 'slavSenkiv:034d67f80c567aa59e589e306b1f6d58-us21'
+    }
+
+    const request = https.request(mailchimpUrl, options, function(responce){
+        responce.on('data', function(data){
+            console.log(JSON.parse(data));
+        });
+    });
+
+    request.write(jsonData);
+    request.end();
 });
 
 app.listen(3000, function(){
