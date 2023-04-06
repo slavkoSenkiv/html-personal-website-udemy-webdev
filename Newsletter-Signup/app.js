@@ -1,5 +1,5 @@
 const express = require('express');
-const request = require('request');
+//const request = require('request');
 const https = require('https');
 const app = express();
 
@@ -25,7 +25,6 @@ app.post('/', function(req, res){
                     FNAME : firstName,
                     LNAME : lastName
                 }
-
             }
         ]
     };
@@ -39,11 +38,19 @@ app.post('/', function(req, res){
         auth : 'slavSenkiv:034d67f80c567aa59e589e306b1f6d58-us21'
     }
 
-    const request = https.request(mailchimpUrl, options, function(responce){
-        responce.on('data', function(data){
-            console.log(JSON.parse(data));
-        });
+    const request = https.request(mailchimpUrl, options, function(response){
+        console.log(response.statusCode);
+        if (response.statusCode === 200){
+            response.on('data', function(data){
+            const responseJsonData = JSON.parse(data);
+            res.sendFile(__dirname + '/success.html');
+            });
+        } else {
+            res.sendFile(__dirname + '/failure.html');
+        }
+        
     });
+
 
     request.write(jsonData);
     request.end();
