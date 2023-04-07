@@ -31,7 +31,7 @@ app.post('/', function(req, res){
 
     const jsonData = JSON.stringify(data);
 
-    const mailchimpUrl = "https://us21.api.mailchimp.com/3.0/lists/a40a62bebd";
+    const mailchimpUrl = "https://us21.api.mailchimp.com/3.0/lists/a40a62bebd1";
 
     const options = {
         method : 'POST',
@@ -51,9 +51,12 @@ app.post('/', function(req, res){
         
     });
 
-
     request.write(jsonData);
     request.end();
+});
+
+app.post('/failure', function(req, res){
+    res.redirect('/');
 });
 
 app.listen(3000, function(){
